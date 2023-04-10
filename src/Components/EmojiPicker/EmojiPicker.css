@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.title{
+  text-align: center;
+  padding: 2rem;
+  font-size: 3rem;
+  font-family: 'Pacifico', cursive;
+  color: #222;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.firstInput{
+ width: 400px;
+ padding: .5rem;
+ border-radius: 5px;
+ border: 2px solid #222;
+ margin: .3rem;
+ outline: none;
+ background-color: #fff;
+}
+
+.inputContainer {
+  display: inline-flex;
+  position: relative;
+}
+
+.emojiPickerContainer{
+  position: absolute;
+  width: 400px;
+  height: 350px;
+  border: solid 1px #fff;
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  box-sizing: border-box;
+  top: 45px;
+  right: 45px;
+  border-radius: 5px;
+}
+
+.emojiPickerButton{
+  display: inline-block;
+  padding: .2rem;
+  font-size: 1.4rem;
+  background-color: #fff;
+  border: 2px solid #222;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.emojiPickerButton:hover{
+  background-color: #222222a6;
+}
+
+.emojiList{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.emojiButton{
+  border: none;
+  font-size: 28px;
+  background-color: transparent;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  transition: .5s;
+}
+
+.emojiButton:hover{
+  background-color: #fff;
+}
+
+.search{
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+
+
+@media only screen and (max-width: 480px){
+  .container{
+    height: 100%;
+  }
+
+  .firstInput{
+    width: 300px;
+   }
+
+   .emojiPickerContainer{
+    width: 350px;
+    height: 400px;
+    top: 45px;
+    right: 5px;
+  }
+}
+
+@media only screen and (max-width: 300px){
+  
+  .title{
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+  }
+
+  .firstInput{
+    width: 200px;
+   }
+
+   .emojiPickerContainer{
+    width: 250px;
+    height: 550px;
+    top: 45px;
+    right: 10px;
+  }
+}
